@@ -1,0 +1,81 @@
+.header {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-secondary, 0.9),
+      rgba($color-secondary, 0.9)
+    ),
+    url(../img/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 5rem;
+
+  .row {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5rem;
+  }
+
+  &__img {
+    margin: 5rem auto;
+    width: 150px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__txt {
+    padding-bottom: 10rem;
+  }
+
+  .seenOn {
+    > p {
+      text-align: center;
+      color: $color-grey-light-2;
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+  }
+
+  &__row-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr;
+
+    img {
+      width: 100%;
+      padding: 4rem;
+    }
+  }
+
+  .row > div:last-child {
+    background-color: $color-secondary;
+    width: 100%;
+  }
+  .persons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &__name {
+      text-align: left;
+    }
+  }
+  .realtors {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    img {
+      width: 70px;
+      border-radius: 50%;
+    }
+  }
+}

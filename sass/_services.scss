@@ -1,0 +1,13 @@
+.services {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12rem;
+  }
+
+  .txt {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-top: 3rem;
+  }
+}

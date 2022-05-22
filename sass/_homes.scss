@@ -1,0 +1,47 @@
+.house {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7rem;
+    border-radius: 3px;
+  }
+
+  &__card {
+    background-color: $color-grey-light-1;
+    text-align: center;
+    position: relative;
+    padding-bottom: 5rem;
+  }
+
+  &__txt {
+    background-color: $color-secondary;
+    padding: 2rem 3rem;
+    display: inline-block;
+    transform: translateY(-3.5rem);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+  }
+
+  &__cost {
+    color: $color-grey-light-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0rem;
+    margin: 0;
+  }
+}

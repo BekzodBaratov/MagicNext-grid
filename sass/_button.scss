@@ -1,0 +1,17 @@
+.btn {
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  color: $color-grey-light-1;
+  background-color: $color-primary;
+  border-radius: 3px;
+  margin: 3rem 0;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    background-color: $color-secondary;
+  }
+}

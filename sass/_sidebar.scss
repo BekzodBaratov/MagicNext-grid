@@ -1,0 +1,38 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 8rem;
+  background-color: $color-primary;
+  display: grid;
+
+  .bar {
+    position: absolute;
+    top: 6vh;
+    width: 60%;
+    margin-left: 20%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $color-grey-light-1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1.5rem;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: $color-grey-light-1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -1.5rem;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: $color-grey-light-1;
+    }
+  }
+}
